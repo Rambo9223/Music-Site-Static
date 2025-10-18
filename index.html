@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head >
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" href="./CSS/SRMusic.css" rel="stylesheet" >
+   
+    <!--Contents Of homepage
+    Nav Bar(Home,About me,Booking,Subscribe,)Fixed, Testimonials, Embedded Video, Links to socials-->
+    <title>SRMusic About Me</title>
+  </head>
+  <body>
+    
+    <header>
+        <div class = "nav-bar">
+            <nav>
+                <div class="pages">
+                <a href="index.html">Home</a>
+                <a href="/Pages/calendar-booking.html">Booking</a>
+                <a href="/Pages/subscribe.html">Subscribe</a>
+                <a href="/Pages/gallery.html">Gallery</a>
+              </div>
+            </nav>
+        </div>
+    </header>
+    <!--Background Image-->
+    <main id="about-me">
+        <div id="background-right">
+            <img src="/Assets/Images/CC2A0054.png" alt="" height="1775" width="2663">
+        </div>
+        <!--Main Content-->
+        <section class="home-content">
+            <h1>Singer/Songwriter + Everything in between!</h1>
+            <h2>About Me</h2>
+            <p>I'm a musician born and raised in the North East of Scotland in a little town called Elgin. <br><br>
+            I'm a singer/songwriter/producer and multi instrumentalist with a passion for creating songs that tell a story. My style is defiantly pop/rock with little pulls and feels from R&B and Folk. When performing solo I will normally play acoustically and really focus make a connection with the audience with my vocals and the raw feel of the sound. <br><br>
+            When I'm with the band I can't resist jamming out and really playing to create an amazing atmosphere and have as much fun as possible. <br><br>
+            I'm always working on new music and different styles of songs so keen an eye out for new releases. 
+            I'm proud to say I've played previously at Belladrum Tartan Heart Festival, Thunder In The Glens. I have had my songs played on BBC radio and many other radio shows in Scotland. </p>
+
+          <!--Nested Video-->
+          <div id="video">
+            <h2>My Newest Single!</h2>
+            <iframe width="878" height="494" src="https://www.youtube.com/embed/9Q9gvk_WnEA" title="Don&#39;t Spend This One Alone (Official Music Video) 🎬" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!--Testemonials-->
+        <article class="Testimonials">
+          <h2>Testimonials</h2>
+          <h4>"Scott is absolutely fantastic. I've seen him live a couple of times now and never disappoints! 💖 Great mix of genres and a few surprises amongst his set. One of the nicest guys on the music scene 👌"</h4>
+      </article> 
+  
+      <article class="Testimonials">
+          <h4>"Great tunes upbeat lively and fun!"</h4>
+      </article>
+        </section>
+    </main>
+    <footer>
+      <!--Social Media Links-->
+    <section id="socials-index" class="links" >
+      <!--The links section is populated via the socials function
+      similar to the rendering of a React App -->  
+    </section>
+    </footer>
+    <script type="module">
+    import {socials} from "/JS/utilities.js";
+    socials(`socials-index`)
+</script>
+  </body>
+</html>

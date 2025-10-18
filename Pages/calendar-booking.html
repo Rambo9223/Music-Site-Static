@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="/CSS/SRMusic.css" rel="stylesheet">
+   
+    <title>SRMusic Bookings</title>
+  </head>
+  <body>
+    <header>
+      <div class = "nav-bar">
+        <nav>
+            <div class="pages">
+                <a href="/index.html">Home</a>
+                <a href="calendar-booking.html">Booking</a>
+                <a href="subscribe.html">Subscribe</a>
+                <a href="gallery.html">Gallery</a>
+          </div>
+        </nav>
+    </div>
+    </header>
+    <main>
+      <!--Background Image-->
+      <div id="background-1">
+        <img src="/Assets/Images/Live-Shot.JPG" alt="" height="1703" width="1680">
+    </div>
+    <div id="booking-form-container">
+    <!--Calendar-->
+        <section class="calendar">
+          <div>
+            <h2>February Calendar</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Venue</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1st</td>
+                  <td>Orrin Bar & Restaurant Elgin</td>
+                </tr>
+                <tr>
+                  <td>3rd</td>
+                  <td>The Bonnie Beastie Forres</td>
+                </tr>
+                <tr>
+                  <td>5th</td>
+                  <td>Bootleggers Bar & Grill Hopeman</td>
+                </tr>
+                <tr>
+                  <td>9th</td>
+                  <td>The Cairngorm Hotel Aviemore</td>
+                </tr>
+                <tr>
+                  <td>10th</td>
+                  <td>The Craigellachie (Copper Dog)</td>
+                </tr>
+                <tr>
+                  <td>11th</td>
+                  <td>The Thistle Bar Buckie</td>
+                </tr>
+                <tr>
+                  <td>12th</td>
+                  <td>The Cairngorm Hotel Aviemore</td>
+                </tr>
+                <tr>
+                  <td>17th</td>
+                  <td>The Bonnie Beastie Forres</td>
+                </tr>
+                <tr>
+                  <td>18th</td>
+                  <td>Private Event</td>
+                </tr>
+                <tr>
+                  <td>19th</td>
+                  <td>The Cairngorm Hotel Aviemore</td>
+                </tr>
+                <tr>
+                  <td>22nd</td>
+                  <td>The Tooth & Claw, Inverness<br> supporting Nick Shane</td>
+                </tr>
+                <tr>
+                  <td>23rd</td>
+                  <td>The Cairngorm Hotel Aviemore</td>
+                </tr>
+                <tr>
+                  <td>24th</td>
+                  <td>The Craigellachie (Copper Dog)</td>
+                </tr>
+                <tr>
+                  <td>25th</td>
+                  <td>Private Event</td>
+                </tr>
+                <tr>
+                  <td>26th</td>
+                  <td>The Cairngorm Hotel Aviemore</td>
+                </tr>
+              </tbody>
+              </table>
+
+          </div>
+        </section>
+        <!--Booking Form-->
+        <section class="booking">
+          <div class="form">
+            <form action="get" id="booking-form" method="post">
+            <div class="heading">
+                <h1 id="title">Booking form</h1></div>
+            <div class="input">
+                <label for="booking-name" class="text">Your Name:*</label>
+                <input type="text" id="booking-name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="input">
+                <label for="booking-date" class="date-label">Booking-Date:*</label>
+                <input type="date"  id="booking-date" name="booking-date" required>
+            </div>
+            <div class="input">
+                <label for="start-time" class="time">Start-Time:</label>
+                <input type="time"  value="" id="start-time" name="start-time" min="00:00" max="23:59" required>
+            </div>
+            <div class="input">
+                <label for="end-time" class="time">End-Time:</label>
+                <input type="time"  id="end-time" name="end-time" min="00:00" max="23:59" required>
+            </div> 
+            <div class="input">
+              <label for="booking-email" class="text">Email:*</label>
+              <input type="email"  id="booking-email" name="email" required placeholder="Enter Your Email">
+          </div>
+          <div class="input">
+            <label for="booking-phone-number" class="text">Contact Number:</label>
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="booking-phone-number" name="phone" placeholder="Enter number(optional)">
+        </div>    
+            
+            <div class="input">
+                <label for="booking-info" class="text">Additional-Information:</label>
+                <textarea  id="booking-info" name="additional-info" placeholder="Please add any information about your event." maxlength="400" rows="6"></textarea>
+            </div>
+            <div class="input-button">
+              <button type="button" class="" name="submit" id="submit-form" onclick="submitBooking()">Submit</button>
+          </div>
+        </form>
+        </div>
+        </section>
+        </div>
+    </main>
+   
+    <footer>
+      <!--Social Media Links-->
+      <section id="socials-calendar" class="links-booking"></section>
+    </footer>
+    <script src="/JS/SRMusic.js"></script>
+    <script type="module">
+    import {socials} from "/JS/utilities.js";
+    socials(`socials-calendar`)
+    </script>
+  </body>
+</html>

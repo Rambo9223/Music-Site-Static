@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="/CSS/SRMusic.css" rel="stylesheet">
+    
+    <!--Contents Of homepage
+    Nav Bar(Home,About me,Booking,Subscribe,)Fixed, Testimonials, Embedded Video, Links to socials-->
+    <title>SRMusic Subscribe</title>
+  </head>
+  <body onload="">
+   
+    <header>
+        <div class = "nav-bar">
+            <nav>
+                <div class="pages">
+                <a href="/index.html">Home</a>
+                <a href="calendar-booking.html">Booking</a>
+                <a href="subscribe.html">Subscribe</a>
+                <a href="gallery.html">Gallery</a>
+              </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <!--Background Image-->
+      <div id="background-right-smaller">
+        <img src="/Assets/Images/CC2A0054.png" alt="" height="888" width="1332">
+    </div>
+    <div id="subscription-form-container">
+    <!--Subscription Form-->
+        <section class="subscription">
+          <h2>Subscribe to stay up to date!</h2>
+          <form id="sub-form" action="get" method="post">
+          <div class="subscription-form">
+            <div>
+                <h1 class="header" >Subscrption Form</h1>
+              </div>
+            <div class="input">
+                <label for="subscribe-name" class="text">Your Name:</label>
+                <input type="text" placeholder="Enter your name" class="name" name="name"  maxlength="100" id="subscribe-name" required>
+            </div>
+            <div class="input">
+                <label for="subscribe-age" class="formbuilder-number-label">Age:</label>
+                <input type="text" placeholder="Age" class="age" name="number" pattern="[0-9]{2,3}" id="subscribe-age" required>
+            </div>
+            <div class="input">
+                <label for="subscribe-email" class="formbuilder-text-label">Email:</label>
+                <input type="email" placeholder="Enter your email" class="email" name="email"  id="subscribe-email" required>
+            </div>
+            <div class="input">
+                <label  class="checkbox-group-label">Notify me of:</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox">
+                        <input name="checkbox-group[]"  id="subscribe-release" value="Option-1 " type="checkbox" checked="checked">
+                        New Releases
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input name="checkbox-group[]" id="subscribe-show" value="Option-2" type="checkbox" checked="checked">
+                        Shows in my area
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="button" class="button" name="button"  id="subscriber-button" onclick="subscriber()">Submit</button>
+            </div>
+        </div>
+      </form>
+        </section>
+        <section id="feedback">
+          <form id="feedback-form" action="get" method="post">
+          <h2>Leave me any feedback!</h2>
+          <div class="feedback-form">
+            <div>
+                <h1 class="header">Feedback</h1>
+              </div>
+            <div class="input">
+                <label for="feedback-name" class="text">Your Name:</label>
+                <input type="text" placeholder="Enter your name" class="name" name="name"  maxlength="100" id="feedback-name" required>
+            </div>
+            <div class="input">
+              <label for="user-feedback" class="text">Your Feedback/Comments</label>
+              <textarea id="user-feedback" placeholder="Please leave any feedback/comments." maxlength="500" rows="4"></textarea>
+            </div>
+            <div class="submit">
+                <button type="button" class="button" name="button"  id="feedback-button" onclick="feedback()">Leave Feedback</button>
+            </div>
+        </div>
+      </form>
+        </section>
+        </div>
+    </main>
+    <footer>
+      <!--Social Media Links-->
+    <section id="socials-subscribe" class="links">
+    </section>
+    </footer>
+    <script src="/JS/SRMusic.js"></script>
+    <script type="module">
+    import {socials} from "/JS/utilities.js";
+    socials(`socials-subscribe`)
+  </script>
+  </body>
+</html>

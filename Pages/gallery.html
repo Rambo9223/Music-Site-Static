@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="/CSS/SRMusic.css" rel="stylesheet">
+    
+    <!--Contents Of homepage
+    Nav Bar(Home,About me,Booking,Subscribe,)Fixed, Testimonials, Embedded Video, Links to socials-->
+    <title>SRMusic Gallery</title>
+  </head>
+  <body onload="galleryPage()">
+    
+    <header>
+        <div class = "nav-bar">
+            <nav>
+                <div class="pages">
+                <a href="/index.html">Home</a>
+                <a href="calendar-booking.html">Booking</a>
+                <a href="subscribe.html">Subscribe</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            </nav>
+        </div>
+    </header>
+    <!--Background div-->
+    <div id="background-gallery">
+    <main id="gallery-content">
+    <!--Image Gallery-->
+    <h2 class="Titles">Image Gallery</h2>
+    <button type="button" id="clear-saved" onclick="clearLikes()">Clear Likes</button>
+    <div class="gallery" id="images">
+        
+        <div class="image-wrap">
+            <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Tooth & Claw 2019.jpg" alt="T&C2019" >
+            <div class="interact">
+                    <div class="like-item">
+                    <label class="like-label">Like</label>
+                    <input class="like" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="image-wrap">
+            <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Belladrum Live Shot.jpg" alt="T&C2022" >
+            <div class="interact">
+                    <div class="like-item">
+                    <label class="like-label">Like</label>
+                    <input class="like" type="checkbox">
+                </div>
+            </div>
+        </div>
+            <div class="image-wrap">
+                <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Tooth & Claw 2023 w Nick Shane.jpg" alt="T&C2023" >
+                <div class="interact">
+                        <div class="like-item">
+                        <label class="like-label">Like</label>
+                        <input class="like" type="checkbox">
+                    </div>
+                </div>
+        </div>
+        <div class="image-wrap">
+            <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Tooth & Claw 2022.jpg" alt="T&C2022" >
+            <div class="interact">
+                    <div class="like-item">
+                    <label class="like-label">Like</label>
+                    <input class="like" type="checkbox">
+                </div>
+            </div>
+    </div>
+    <div class="image-wrap">
+        <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Studio.jpg" alt="studio pic" >
+        <div class="interact">
+                <div class="like-item">
+                <label class="like-label">Like</label>
+                <input class="like" type="checkbox">
+            </div>
+        </div>
+</div>
+<div class="image-wrap">
+    <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Back Head.png" alt="Live-Shot" >
+    <div class="interact">
+            <div class="like-item">
+            <label class="like-label">Like</label>
+            <input class="like" type="checkbox">
+        </div>
+    </div>
+</div>
+<div class="image-wrap">
+    <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Thunder in The Geln 2019.jpg" alt="Thunder in the Glen 2019" >
+    <div class="interact">
+            <div class="like-item">
+            <label class="like-label">Like</label>
+            <input class="like" type="checkbox">
+        </div>
+    </div>
+</div>
+<div class="image-wrap">
+    <img class="gallery-image" src="/Assets/Images/Gallery/Squared/LiveStream.jpg" alt="LiveStream" >
+    <div class="interact">
+            <div class="like-item">
+            <label class="like-label">Like</label>
+            <input class="like" type="checkbox">
+        </div>
+    </div>
+</div>
+<div class="image-wrap">
+    <img class="gallery-image" src="/Assets/Images/Gallery/Squared/Botanic 2021.jpg" alt="Botanic House 2021" >
+    <div class="interact">
+            <div class="like-item">
+            <label class="like-label">Like</label>
+            <input class="like" type="checkbox">
+        </div>
+    </div>
+</div>
+
+    </div>
+      
+    <!--Video Gallery-->
+    <h2 class="Titles">Video Gallery</h2>
+        <div class="gallery" id="video">
+            <div class="image-wrap">
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/9Q9gvk_WnEA" title="Don&#39;t Spend This One Alone (Official Music Video) 🎬" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="interact">
+                        <div class="like-item">
+                        <label class="like-label">Like</label>
+                        <input class="like" type="checkbox">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-wrap">
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/PeBLWYR7s0Y" title="Ready To Go Back (Official Lyric Video)"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="interact">
+                        <div class="like-item">
+                        <label class="like-label">Like</label>
+                        <input class="like" type="checkbox">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-wrap">
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/QTKgFuLjfP0" title="My Little Heart (Official Music Video) 🎬" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="interact">
+                        <div class="like-item">
+                        <label class="like-label">Like</label>
+                        <input class="like" type="checkbox">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-wrap">
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/0Za-yDu9rdE" title="Picture (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="interact">
+                        <div class="like-item">
+                        <label class="like-label">Like</label>
+                        <input class="like" type="checkbox">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-wrap">
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/PK_I-E39rc0" title="NYC"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="interact">
+                        <div class="like-item">
+                        <label class="like-label">Like</label>
+                        <input class="like" type="checkbox">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-wrap">
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/28gQzQV5hJo" title="Sometimes Gerry Cinnamon (Live Loop Pedal Cover)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="interact">
+                    <div class="like-item">
+                    <label class="like-label">Like</label>
+                    <input class="like" type="checkbox">
+                </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </main>
+    <footer>
+      <!--Social Media Links-->
+      <section id="socials-gallery" class="links"></section>
+    </footer>
+</div>
+<script src="/JS/SRMusic.js"></script>
+<script type="module">
+    import {socials} from "/JS/utilities.js";
+    socials("socials-gallery")
+</script>
+</body>
+</html>
