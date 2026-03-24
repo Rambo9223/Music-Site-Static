@@ -10,7 +10,7 @@
 .nav-bar{
     background-color: black;
     display:flex;
-    height: 20%;
+    height: 25%;
     overflow: hidden;
     position:fixed;
     right: 0;
@@ -35,11 +35,6 @@ nav a{
     text-decoration: none;
     top:-15px;
 }
-nav a:hover{
-    color: white;
-    font-size: 42px;
-    text-decoration: underline solid;
-}
 
 .pages{
     display: inline-block;
@@ -55,19 +50,17 @@ nav a:hover{
 /* Home Page Elements*/
 
 #background-right{
-    left: -1850px;
+    overflow: hidden;
+    left: -850px;
     margin:auto;
-    overflow: visible;
     position: absolute;
     right: 0px;
     top: -150px;
-    width:100%;
     z-index: -1;
     
 }
 
 #background-right > img {
-    overflow: hidden;
     height: auto;
     width: 2663px;
 }
@@ -118,13 +111,12 @@ nav a:hover{
 
 /*Subscribe Page Elements*/
 #background-right-smaller{
-    left: 100px;
+    overflow: hidden;
+    left: 10px;
     margin:auto;
-    overflow: visible;
     position: absolute;
     right: 0;
     top: -10px;
-    width:100%;
     z-index: -1;
     
 }
@@ -136,7 +128,7 @@ nav a:hover{
 }
 
 #subscription-form-container{
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 
@@ -153,5 +145,13 @@ nav a:hover{
     width: 500px;
 }
 
+}
+
+@media screen and (min-width:1020px) {
+    nav a:hover{
+    color: white;
+    font-size: 42px;
+    text-decoration: underline solid;
+}
 }
 
