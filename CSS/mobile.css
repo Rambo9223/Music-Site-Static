@@ -47,17 +47,17 @@ nav a{
 /* Home Page Elements  height="1775" width="2663"*/
 
 #background-right{
-    left: -1850px;
+    overflow: hidden;
+    left: -850px;
     right: 0;
     position: absolute;
     top: 15px;
     z-index: -1;   
-    width:100%;
     margin: auto;
+    
  
 }
 #background-right > img {
-    overflow: hidden;
     height: auto;
     width: 2000px;
 }
