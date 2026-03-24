@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+/*Mobile to Tablet*/
+
+@media only screen and (max-width: 779px) {
+    
+
+.nav-bar{
+    background-color: black;
+    display:flex;
+    position:fixed;
+    right: 0;
+    top: 0 ;
+    width:100%;
+    z-index: 2;
+}
+nav{
+    font-family: 'IBM PLex Mono',monospace;
+    font-weight:bolder;
+    margin: auto;
+    text-decoration: none;
+    width:100%;
+    z-index: 2;
+    padding-left: 10px;
+}
+nav a{  
+    color:rgb(202, 202, 255);
+    font-size: 24px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+.pages{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+}
+.pages a {
+    padding: 5px 0px ;
+}
+
+/* Headers Gallery & */
+/* Home Page Elements  height="1775" width="2663"*/
+
+#background-right{
+    left: -1850px;
+    right: 0;
+    position: absolute;
+    top: 15px;
+    z-index: -1;   
+    width:100%;
+    margin: auto;
+ 
+}
+#background-right > img {
+    overflow: hidden;
+    height: auto;
+    width: 2000px;
+}
+
+
+.home-content{
+    left: 0;  
+    margin: auto;
+    min-width: 20%;
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    width: 80%;
+    z-index: 1;
+}
+
+
+#video > iframe {
+    width: 350px;
+    height: 350px;
+}
+/*Booking Page Elements*/
+
+#background-1{
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    z-index: -1;
+}   
+
+#background-1>img{
+    height:auto; 
+    width:840px;
+    
+}
+
+#booking{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 120px;
+}
+
+#socials-calendar{
+    padding-top: 20px;
+}
+
+/*Subscribe Page Elements height="888" width="1332"*/
+#background-right-smaller{
+    margin:auto;
+    position: absolute;
+    width:100%;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+
+#background-right-smaller>img{
+    width: auto;
+    position: relative;
+    right: 400px;
+    height: 888px;
+}
+
+
+/*Gallery Page*/
+#background-gallery{
+overflow-x: hidden;
+}
+
+#gallery-content{
+    padding-top: 150px;
+    text-align: center;
+}
+
+.image-wrap > iframe{
+    height: 400px;
+    width: 400px;
+}
+
+#socials-gallery{
+    background-color: black;
+}
+
+}

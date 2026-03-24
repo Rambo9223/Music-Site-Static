@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
 
-/*Common elements */
+/*Common elements*/
+
 body{
     background-color: black;
     color: azure;
@@ -11,50 +12,9 @@ body{
     width:100%;
     
 }
-.nav-bar{
-    background-color: black;
-    display:flex;
-    height: 15%;
-    overflow: hidden;
-    position:fixed;
-    right: 0;
-    top: 0 ;
-    width:100%;
-    z-index: 2;
-}
-nav{
-    display:block;
-    font-family: 'IBM PLex Mono',monospace;
-    font-weight:bolder;
-    margin: auto;
-    padding-bottom: 20px;
-    text-decoration: none;
-    width:100%;
-    z-index: 2;
-}
-nav a{  
-    color:rgb(202, 202, 255);
-    font-size: 36px;
-    position: relative;
-    text-decoration: none;
-    top:-15px;
-}
-nav a:hover{
-    color: white;
-    font-size: 42px;
-    text-decoration: underline solid;
-}
+
 a:visited{text-decoration: none;}
 
-.pages{
-    display: inline-block;
-    left: 20%;
-    position: absolute;
-    
-}
-.pages a {
-    padding: 0 30px ;
-}
 .links{
     margin: auto;
     position: relative;
@@ -84,56 +44,24 @@ li img{
     top: 10px;
     }
 
-/* Headers Gallery & */
-/* Home Page Elements*/
+/*Home Page*/
 
-#background-right{
-    left: -1850px;
-    margin:auto;
-    overflow: visible;
-    position: absolute;
-    right: 0px;
-    top: -150px;
-    width:100%;
-    z-index: -1;
-    
-}
-
-
-.home-content{
-    left: 180px;  
-    margin: auto;
-    min-width: 20%;
-    position: relative;
-    text-align: center;
-    top: 150px;
-    width: 50%;
-    z-index: 1;
-}
 .home-content > p{
     text-align: justify;
 }
+
 #video{
     margin: auto;
     position: relative;
     text-align: center;
     top:0;
-    z-index: 1;
-    
+    z-index: 1; 
 }
-
+   
+    
 /*Booking Page Elements*/
 
-#background-1{
-    margin: auto;
-    overflow: hidden;
-    position: absolute;
-    right:0;
-    top: -200px;
-    width: 100%;
-    z-index: -1;
-    
-}
+
 
 #booking-form-container{
     display: flex;
@@ -215,17 +143,7 @@ li img{
     
 }
 /*Subscribe Page Elements*/
-#background-right-smaller{
-    left: 100px;
-    margin:auto;
-    overflow: visible;
-    position: absolute;
-    right: 0;
-    top: -10px;
-    width:100%;
-    z-index: -1;
-    
-}
+
 #subscription-form-container{
     display: flex;
     flex-direction: row;
@@ -291,10 +209,6 @@ width: 100%;
 z-index: -1;
 }
 
-#gallery-content{
-    padding-top: 100px;
-    text-align: center;
-}
 
 #gallery-content h2{
     color: black;
@@ -342,21 +256,3 @@ z-index: -1;
     justify-content: space-evenly;
     width: 100%;
 }
-
-
-
-/*To add - 
-breakpoints nav bar / gallery images + videos*/
-
-/*Unused/Depreciated Elements*/
-/*
-.content{
-    z-index: 1;
-    text-align: center;
-    width: 60%;
-    min-width: 20%;
-    margin: auto;
-    position: relative;
-    top: 150px;
-}
-*/

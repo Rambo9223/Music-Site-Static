@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+
+/*Tablet to Laptop elements */
+
+@media only screen and (min-width: 780px) {
+
+
+.nav-bar{
+    background-color: black;
+    display:flex;
+    height: 20%;
+    overflow: hidden;
+    position:fixed;
+    right: 0;
+    top: 0 ;
+    width:100%;
+    z-index: 2;
+}
+nav{
+    display:block;
+    font-family: 'IBM PLex Mono',monospace;
+    font-weight:bolder;
+    margin: auto;
+    padding-bottom: 20px;
+    text-decoration: none;
+    width:100%;
+    z-index: 2;
+}
+nav a{  
+    color:rgb(202, 202, 255);
+    font-size: 36px;
+    position: relative;
+    text-decoration: none;
+    top:-15px;
+}
+nav a:hover{
+    color: white;
+    font-size: 42px;
+    text-decoration: underline solid;
+}
+
+.pages{
+    display: inline-block;
+    left: 20%;
+    position: absolute;
+    
+}
+.pages a {
+    padding: 0 30px ;
+}
+
+/* Headers Gallery & */
+/* Home Page Elements*/
+
+#background-right{
+    left: -1850px;
+    margin:auto;
+    overflow: visible;
+    position: absolute;
+    right: 0px;
+    top: -150px;
+    width:100%;
+    z-index: -1;
+    
+}
+
+#background-right > img {
+    overflow: hidden;
+    height: auto;
+    width: 2663px;
+}
+
+
+.home-content{
+    left: 180px;  
+    margin: auto;
+    min-width: 30%;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    width: 50%;
+    z-index: 1;
+}
+
+
+#video > iframe {
+    width: 100%;
+    height: 494px;
+
+}
+/*Booking Page Elements*/
+
+#background-1 {
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    top: -200px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+#background-1>img{
+    height:auto; 
+    width:1680px;
+    
+}
+
+#booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+
+/*Subscribe Page Elements*/
+#background-right-smaller{
+    left: 100px;
+    margin:auto;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width:100%;
+    z-index: -1;
+    
+}
+
+#background-right-smaller>img{
+    width: auto;
+    position: relative;
+    height: 888px;
+}
+
+#subscription-form-container{
+    padding-top: 20px;
+}
+
+
+/*Gallery Page*/
+
+
+#gallery-content{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.image-wrap > iframe{
+    height: 500px;
+    width: 500px;
+}
+
+}
+
