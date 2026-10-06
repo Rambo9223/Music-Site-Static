@@ -71,7 +71,7 @@ nav a{
     min-width: 30%;
     position: relative;
     text-align: center;
-    top: 150px;
+    top: 175px;
     width: 50%;
     z-index: 1;
 }
@@ -135,7 +135,7 @@ nav a{
 
 
 #gallery-content{
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
 }
 
